@@ -6,48 +6,55 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-    margin-bottom: 40px;
+    justify-content:space-between;
+    align-items:center;
+    margin: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
     background-color:rgb(2,44, 34);
     border-radius: 20px;
-    height: 50vh;
+    height: 40vh;
    } 
-    .h1{
-    font-size: 2.8em;
+.items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 300px;
+}
+.h1{
+    font-size: 3.5em;
+    font-weight: 200;
     margin-bottom: 10px;
     color: white;
-   
    }
-   #p1{
+#p1{
     font-size: 1.1em; 
     color: rgb(220, 210, 210);
-    margin-bottom: 25px;
-   
+  
   }
-  .button{
+.button{
     border:none;
-    border-radius: 25px;
-    padding: 14px 30px;
-    font-size: 1 em;
+    border-radius: 30px;
+    padding: 25px 35px;
+    font-size: 1em;
     font-weight: bold;
     cursor:pointer;
     background-color:rgb(178, 231, 109);
+  }
+  .button:hover{
+    background-color: white;
   }
 .footercontainer{
   background-color:rgb(241, 235, 239) ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 3000px;
     justify-content:space-between;
 }
 .footercard{
-  border: solid;
+  border:solid;
   height:70vh;
   width: 70vh;
   border-radius:20px;
@@ -59,15 +66,53 @@ body{
   justify-content: flex-start;
   align-items:center;
   align-content: space-between;
+  padding: 10px;
 }
-.column
+.carditem{
+  display: flex;
+  flex-direction:column;
+  gap: 20px;
+  margin-top:30px;
+}
+.carditem p{
+  font-size: small;
+  color: rgb(205, 203, 203);
+}
+
+.email{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 90%;
+  max-width: 400px;
+  padding: 50px;
+}
+.email button{
+  padding: 15px;
+  border-radius: 25px;
+  background-color: rgb(178, 231, 109);
+}
+.email button:hover{
+  background-color: white;
+}
+.email input{
+  padding: 15px;
+  border-radius: 25px;
+}
 ul{
   list-style: none;
-text-align: start;
+display: flex;
+flex-direction: column;
+gap: 30px;
 }
 ul li a {
   text-decoration: none;
   color: rgb(148, 143, 143);
+  
+}
+.column{
+  padding: 5px;
+  
 }
 ul li a:hover{
   color:rgb(178, 231, 109);
